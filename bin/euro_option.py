@@ -32,6 +32,7 @@ class EuroOption(Option):
         else:
             raise NotImplementedError
 
+
 class EuroCall(EuroOption):
     # Engine of pricing EuroCall option
     def __init__(self, K, T, is_short=False, price=0, S0=None, r=0.01, sigma=0.1):
