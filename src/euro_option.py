@@ -44,6 +44,9 @@ class EuroCall(EuroOption):
             price = self.price
         EuroOption.__init__(self, K, T, is_short, price, S0, r, sigma)
 
+    def get_bsm_price(self):
+        return bsm_call_price(self.S0, self.K, self.r, self.sigma, self.T)
+
     def payoff_long(self, P):
         return 0 if P < self.K else P - self.K
 
@@ -62,6 +65,9 @@ class EuroPut(EuroOption):
             self.price = bsm_put_price(S0, K, r, sigma, T)
             price = self.price
         EuroOption.__init__(self, K, T, is_short, price, S0, r, sigma)
+
+    def get_bsm_price(self):
+        return bsm_put_price(self.S0, self.K, self.r, self.sigma, self.T)
 
     def payoff_long(self, P):
         return self.K - P if P < self.K else 0
