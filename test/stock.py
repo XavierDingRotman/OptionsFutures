@@ -1,4 +1,4 @@
-from bin.stock import Stock
+from src.stock import Stock
 
 if __name__ == '__main__':
     stock_1 = Stock(10, 3)

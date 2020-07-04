@@ -1,10 +1,10 @@
-from bin.security import Security
-from bin.stock import Stock
-from bin.euro_option import EuroCall, EuroPut
+from src.security import Security
+from src.stock import Stock
+from src.euro_option import EuroCall, EuroPut
 from math import inf
 from datetime import datetime as dt
-from bin.ticker import get_option_info_from_ticker
-from bin.time import get_T
+from src.ticker import get_option_info_from_ticker
+from src.time import get_T
 
 class Deal:
     def __init__(self, position, vwap, comission=0, ticker=None, timestamp=dt.today()):

@@ -1,5 +1,5 @@
-from bin.euro_option import EuroCall, EuroPut
-from bin.portfolio import Portfolio
+from src.euro_option import EuroCall, EuroPut
+from src.portfolio import Portfolio
 
 
 class BullSpread(Portfolio):

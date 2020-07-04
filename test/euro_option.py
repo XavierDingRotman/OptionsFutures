@@ -1,4 +1,4 @@
-from bin.euro_option import EuroCall, EuroPut
+from src.euro_option import EuroCall, EuroPut
 
 if __name__ == '__main__':
     call_1 = EuroCall(10, 3)

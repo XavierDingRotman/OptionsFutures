@@ -1,4 +1,4 @@
-from bin.security import Security
+from src.security import Security
 
 
 class Stock(Security):

@@ -1,4 +1,4 @@
-from bin.deal import get_deal_from_ticker
+from src.deal import get_deal_from_ticker
 from datetime import datetime as dt
 
 if __name__ == '__main__':

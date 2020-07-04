@@ -1,4 +1,4 @@
-from bin.spread import BullSpread
+from src.spread import BullSpread
 
 if __name__ == '__main__':
     bullspread = BullSpread(K1=10, K2=20, T=1,

@@ -1,6 +1,6 @@
-from bin.error import InputError
-from bin.euro_option import EuroCall, EuroPut
-from bin.portfolio import Portfolio
+from src.error import InputError
+from src.euro_option import EuroCall, EuroPut
+from src.portfolio import Portfolio
 
 
 class Condor(Portfolio):
