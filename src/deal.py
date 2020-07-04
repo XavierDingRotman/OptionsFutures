@@ -24,6 +24,9 @@ class Deal:
     def profit(self, p):
         return self.trading_volume * self.contract_size * self.security.profit(p) - self.commission
 
+    def greek_letter(self, greek, dd=0, method="BSM"):
+        return self.trading_volume * self.contract_size * self.security.greek_letter(greek, dd, method)
+
 
 class DealEquity(Deal):
     def __init__(self, position, price, commission=0, ticker=None, timestamp=dt.today()):

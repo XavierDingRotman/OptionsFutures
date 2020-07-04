@@ -199,22 +199,22 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="971" y="229" key="#xdebugger.evaluate/66.0.1854.1080@66.0.1854.1080" timestamp="1593903107943" />
-    <state width="1833" height="447" key="GridCell.Tab.0.bottom" timestamp="1593905696950">
+    <state width="916" height="447" key="GridCell.Tab.0.bottom" timestamp="1593906867795">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1833" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593905696950" />
-    <state width="1833" height="447" key="GridCell.Tab.0.center" timestamp="1593905696950">
+    <state width="916" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
+    <state width="916" height="447" key="GridCell.Tab.0.center" timestamp="1593906867795">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1833" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593905696950" />
-    <state width="1833" height="447" key="GridCell.Tab.0.left" timestamp="1593905696950">
+    <state width="916" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
+    <state width="916" height="447" key="GridCell.Tab.0.left" timestamp="1593906867795">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1833" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593905696950" />
-    <state width="1833" height="447" key="GridCell.Tab.0.right" timestamp="1593905696950">
+    <state width="916" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
+    <state width="916" height="447" key="GridCell.Tab.0.right" timestamp="1593906867795">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1833" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593905696950" />
+    <state width="916" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
     <state width="1833" height="364" key="GridCell.Tab.1.bottom" timestamp="1593904380190">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
@@ -231,10 +231,18 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state width="1833" height="364" key="GridCell.Tab.1.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
-    <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593905769819">
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593905913154">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593905769819" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593905913154" />
+    <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593905987692">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593905987692" />
+    <state x="677" y="328" key="git4idea.merge.GitPullDialog" timestamp="1593905948584">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="677" y="328" key="git4idea.merge.GitPullDialog/66.0.1854.1080@66.0.1854.1080" timestamp="1593905948584" />
     <state x="656" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1593902849698">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>

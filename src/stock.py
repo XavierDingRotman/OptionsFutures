@@ -15,3 +15,13 @@ class Stock(Security):
         if end == None:
             end = self.S * 2
         Security.graph_payoff(self, start, end, num)
+
+    def get_bsm_price(self):
+        return self.S
+
+    def greek_letter(self, greek, dd=0, method="BSM"):
+        if greek == "delta":
+            return 1
+        if greek == "gamma":
+            return 0
+        return 0

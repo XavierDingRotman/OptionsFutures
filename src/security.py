@@ -31,3 +31,6 @@ class Security():
         plt.plot(x, y, label="profit")
         plt.axhline(y=0, color='r', linestyle='-')
         plt.show()
+
+    def greek_letter(self, greek, dd=0, method="BSM"):
+        raise NotImplementedError

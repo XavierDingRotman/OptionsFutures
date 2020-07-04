@@ -2,6 +2,7 @@ from src.deal import Deal, DealEquity, DealEuroCall, DealEuroPut
 import numpy as np
 from matplotlib import pyplot as plt
 from src.binary_search import binary_search
+from src.bsm_greek import delta, gamma
 
 class DealCombo:
     def __init__(self, deals):
@@ -37,6 +38,14 @@ class DealCombo:
         plt.legend()
         plt.show()
 
+    def greek_letter(self, greek, dd=0, method="BSM"):
+        result = 0
+        for deal in self.deals:
+            ddd = dd
+            if isinstance(dd, dict):
+                ddd = dd[greek]
+            result += deal.greek_letter(greek, ddd, method)
+        return result
 
     def find_break_even(self, start=0, end=1000, num=100, tol=1e-5, max_iter=1000):
         x = np.linspace(start, end, num)
