@@ -21,11 +21,13 @@ class Security():
     def graph_payoff(self, start, end, num=100):
         x = np.linspace(start, end, num)
         y = [self.payoff(x_i) for x_i in x]
-        plt.plot(x, y)
+        plt.plot(x, y, label="payoff")
+        plt.legend()
+        plt.show()
 
     def graph_profit(self, start, end, num=100):
         x = np.linspace(start, end, num)
         y = [self.profit(x_i) for x_i in x]
-        plt.plot(x, y)
+        plt.plot(x, y, label="profit")
         plt.axhline(y=0, color='r', linestyle='-')
         plt.show()
