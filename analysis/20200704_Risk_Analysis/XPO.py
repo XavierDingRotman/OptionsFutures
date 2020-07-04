@@ -28,7 +28,13 @@ if __name__ == '__main__':
 
     print(deal_combo_1.find_break_even(start=40, end=120))
     print(deal_combo_2.find_break_even(start=40, end=120))
+    print("Report")
 
+    for greek in ['delta', 'gamma', 'theta', 'vega', 'rho']:
+        print('{} - \n'.format(greek))
+        print(deal_combo_1.greek_letter(greek))
+
+    print('BSM Price - \n')
     print(xpo_call_1.security.get_bsm_price()) # 2.5 vs 2.44 => sell vs short
     print(xpo_call_2.security.get_bsm_price()) # 2.1 vs 1.8 => sell vs long
     print(xpo_put_1.security.get_bsm_price()) # 1.85 vs 1.21 => sell vs long
