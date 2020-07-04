@@ -4,7 +4,7 @@ import numpy as np
 class Security():
     def __init__(self, is_short, price=0):
         self.is_short = is_short
-        self.price = -price if self.is_short else price
+        self.price = price
 
     def payoff(self, P):
         # P is mature price
@@ -16,7 +16,7 @@ class Security():
         raise NotImplementedError
 
     def profit(self, P):
-        return self.payoff(P) - self.price
+        return self.payoff(P) - (self.price if not self.is_short else -self.price)
 
     def graph_payoff(self, start, end, num=100):
         x = np.linspace(start, end, num)

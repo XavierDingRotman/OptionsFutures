@@ -24,7 +24,7 @@ def get_option_info_from_ticker(ticker):
     is_call = dict_is_call[exp_month_code]
     day = int(ticker[4:6])
     year = int(ticker[6:8]) + 2000
-    K = int(ticker[8:-2])/10
+    K = int(ticker[8:-2])/100
     country = ticker[-1]
     return asset, is_call, month, day, year, K, country
 
