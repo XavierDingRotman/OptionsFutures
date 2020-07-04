@@ -21,9 +21,9 @@ class Condor(Portfolio):
         if K3 > K4:
             raise InputError(message="Error", expression="K3 must be smaller than K4")
 
-        sec_1 = Security(K=K1, T=T, is_short=False, price=price_1, S0=S0, r=r, sigma=sigma)
-        sec_2 = Security(K=K2, T=T, is_short=True, price=price_2, S0=S0, r=r, sigma=sigma)
-        sec_3 = Security(K=K3, T=T, is_short=True, price=price_3, S0=S0, r=r, sigma=sigma)
-        sec_4 = Security(K=K4, T=T, is_short=False, price=price_4, S0=S0, r=r, sigma=sigma)
+        self.sec_1 = Security(K=K1, T=T, is_short=False, price=price_1, S0=S0, r=r, sigma=sigma)
+        self.sec_2 = Security(K=K2, T=T, is_short=True, price=price_2, S0=S0, r=r, sigma=sigma)
+        self.sec_3 = Security(K=K3, T=T, is_short=True, price=price_3, S0=S0, r=r, sigma=sigma)
+        self.sec_4 = Security(K=K4, T=T, is_short=False, price=price_4, S0=S0, r=r, sigma=sigma)
 
-        Portfolio.__init__(self, [sec_1, sec_2, sec_3, sec_4])
+        Portfolio.__init__(self, [self.sec_1, self.sec_2, self.sec_3, self.sec_4])
