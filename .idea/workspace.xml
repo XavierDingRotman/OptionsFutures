@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="">
+    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="Added calculation for cost">
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/20200704_Risk_Analysis/XPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/20200704_Risk_Analysis/XPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deal.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deal_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deal_combo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/deal_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/deal_combo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Setup Script" />
         <option value="Python Script" />
       </list>
     </option>
@@ -55,14 +56,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Xiaotong Ding\PycharmProjects\OptionsFutures" />
+      <recent name="C:\Users\Xiaotong Ding\PycharmProjects\OptionsFutures\bin" />
       <recent name="C:\Users\Xiaotong Ding\Documents\GitHub\OptionsFutures\analysis\20200704_Risk_Analysis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.XPO">
+  <component name="RunManager" selected="Python.setup (1)">
     <configuration name="XPO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OptionsFutures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,48 +89,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="OptionsFutures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/binary_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="deal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="OptionsFutures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/deal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="deal_combo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OptionsFutures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,6 +102,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/deal_combo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptionsFutures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptionsFutures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Xiaotong Ding\PycharmProjects\OptionsFutures\setup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +175,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.setup (1)" />
         <item itemvalue="Python.XPO" />
         <item itemvalue="Python.sigma" />
         <item itemvalue="Python.deal_combo" />
-        <item itemvalue="Python.binary_search" />
-        <item itemvalue="Python.deal" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593907324945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added calculation for cost">
+      <created>1593907821785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593907821785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,12 +226,17 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Reformat and rearrange code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat and rearrange code" />
+    <MESSAGE value="Added calculation for cost" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added calculation for cost" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="713" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593909307142">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="713" y="342" key="#com.intellij.fileTypes.FileTypeChooser/66.0.1854.1080@66.0.1854.1080" timestamp="1593909307142" />
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593897720151">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
@@ -229,26 +245,26 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="971" y="229" key="#xdebugger.evaluate/66.0.1854.1080@66.0.1854.1080" timestamp="1593903107943" />
-    <state x="620" y="108" key="CommitChangelistDialog2" timestamp="1593907323946">
+    <state x="620" y="108" key="CommitChangelistDialog2" timestamp="1593909014319">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="620" y="108" key="CommitChangelistDialog2/66.0.1854.1080@66.0.1854.1080" timestamp="1593907323946" />
-    <state width="916" height="447" key="GridCell.Tab.0.bottom" timestamp="1593907657354">
+    <state x="620" y="108" key="CommitChangelistDialog2/66.0.1854.1080@66.0.1854.1080" timestamp="1593909014319" />
+    <state width="1833" height="447" key="GridCell.Tab.0.bottom" timestamp="1593910861200">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657354" />
-    <state width="916" height="447" key="GridCell.Tab.0.center" timestamp="1593907657353">
+    <state width="1833" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
+    <state width="1833" height="447" key="GridCell.Tab.0.center" timestamp="1593910861200">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
-    <state width="916" height="447" key="GridCell.Tab.0.left" timestamp="1593907657353">
+    <state width="1833" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
+    <state width="1833" height="447" key="GridCell.Tab.0.left" timestamp="1593910861200">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
-    <state width="916" height="447" key="GridCell.Tab.0.right" timestamp="1593907657353">
+    <state width="1833" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
+    <state width="1833" height="447" key="GridCell.Tab.0.right" timestamp="1593910861200">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
+    <state width="1833" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
     <state width="1833" height="364" key="GridCell.Tab.1.bottom" timestamp="1593904380190">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
@@ -265,6 +281,10 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state width="1833" height="364" key="GridCell.Tab.1.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
+    <state x="494" y="185" key="SettingsEditor" timestamp="1593910328350">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="494" y="185" key="SettingsEditor/66.0.1854.1080@66.0.1854.1080" timestamp="1593910328350" />
     <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593907335017">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
