@@ -12,4 +12,5 @@ if __name__ == '__main__':
                                 sigma=0.1,
                                 comission=0.1839,
                                 timestamp=dt(year=2020, month=6, day=19))
-    print(deal)
+    deal.graph_payoff()
+    print(deal.find_break_even())

@@ -13,8 +13,8 @@ if __name__ == '__main__':
     call_2.graph_payoff()
 
     call_3 = EuroCall(K=10, T=0.5, is_short=False, price="BSM", S0=5, r=0.001, sigma=1)
-    print(call_3.greek_letter("delta"))
-    print(call_3.greek_letter("gamma"))
-    print(call_3.greek_letter("theta"))
-    print(call_3.greek_letter("vega"))
-    print(call_3.greek_letter("rho"))
+    for greek in ['delta', 'gamma', 'theta', 'vega', 'rho']:
+        print('{} : {}'.format(greek, call_3.greek_letter(greek)))
+
+    call_3.graph_payoff()
+    print(call_3.find_break_even())

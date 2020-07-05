@@ -8,7 +8,7 @@ from opfu.ticker import get_option_info_from_ticker
 from opfu.time import get_T
 
 
-class Deal:
+class Deal(Security):
     def __init__(self, position, price, commission=0, ticker=None, timestamp=dt.today(), market_date=dt.today(),
                  market_price=None):
         self.ticker = ticker
@@ -22,6 +22,7 @@ class Deal:
         self.security = Security(is_short=self.is_short, price=self.price)
         self.market_date = market_date
         self.market_price = self.price if market_price is None else market_price
+        Security.__init__(self, self.is_short, self.price)
 
     def cost(self):
         return self.price * self.position

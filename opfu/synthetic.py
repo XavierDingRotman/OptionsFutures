@@ -2,14 +2,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from opfu.euro_option import EuroCall, EuroPut
+from opfu.security import Security
 from opfu.stock import Stock
 
 
-class Synthetic:
+class Synthetic(Security):
     def __init__(self, securities, is_short=False):
         self.securities = securities
         self.is_short = is_short
         self.sign = -1 if self.is_short else 1
+        Security.__init__(self, is_short=is_short, price=self.get_price())
+
+    def get_price(self):
+        result = 0
+        for security in self.securities:
+            result += self.sign * security.price
+        return result
 
     def payoff(self, P):
         result = 0

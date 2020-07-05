@@ -9,7 +9,7 @@ from opfu.sigma import est_sigma
 if __name__ == '__main__':
     market_date = dt(2020, 7, 3)
     r = 0.68 / 100
-    sigma = est_sigma(pd.read_csv("../../data/XPO.csv")['Close'].to_numpy(), "day")
+    sigma = est_sigma(pd.read_csv("../data/XPO.csv")['Close'].to_numpy(), "day")
     xpo = DealEquity(position=500, price=74, commission=0.0073, ticker="XPO", timestamp=dt(2020, 6, 26),
                      market_date=market_date, market_price=0.55)
     S0 = 79.18
