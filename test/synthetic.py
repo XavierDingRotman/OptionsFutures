@@ -25,7 +25,7 @@ if __name__ == '__main__':
                            EuroCall(K=300, T=1, is_short=True, price="BSM", S0=332),
                            EuroCall(K=270, T=1, is_short=False, price="BSM", S0=332)])
 
-    portfolio.graph_profit()
+    portfolio.graph_profit(start=0, end=700)
     print(portfolio.find_break_even())
 
     # verify put-call parity

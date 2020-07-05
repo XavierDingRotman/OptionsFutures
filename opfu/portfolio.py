@@ -1,6 +1,3 @@
-import numpy as np
-from matplotlib import pyplot as plt
-
 from opfu.security import Security
 
 
@@ -27,23 +24,23 @@ class Portfolio(Security):
             result += deal.profit(p)
         return result
 
-    def graph_payoff(self, start=0, end=None, num=100):
-        if end == None:
-            end = 1000
-        x = np.linspace(start, end, num)
-        y = [self.payoff(x_i) for x_i in x]
-        plt.plot(x, y, label="payoff")
-        plt.legend()
-        plt.show()
+    # def graph_payoff(self, start=0, end=None, num=100):
+    #     if end == None:
+    #         end = 1000
+    #     x = np.linspace(start, end, num)
+    #     y = [self.payoff(x_i) for x_i in x]
+    #     plt.plot(x, y, label="payoff")
+    #     plt.legend()
+    #     plt.show()
 
-    def graph_profit(self, start=0, end=None, num=100):
-        if end == None:
-            end = 1000
-        x = np.linspace(start, end, num)
-        y = [self.profit(x_i) for x_i in x]
-        plt.plot(x, y, label="profit")
-        plt.legend()
-        plt.show()
+    # def graph_profit(self, start=0, end=None, num=100):
+    #     if end == None:
+    #         end = 1000
+    #     x = np.linspace(start, end, num)
+    #     y = [self.profit(x_i) for x_i in x]
+    #     plt.plot(x, y, label="profit")
+    #     plt.legend()
+    #     plt.show()
 
     def greek_letter(self, greek, dd=0, method="BSM"):
         result = 0

@@ -26,6 +26,7 @@ class Security():
         x = np.linspace(start, end, num)
         y = [self.payoff(x_i) for x_i in x]
         plt.plot(x, y, label="payoff")
+        plt.axhline(y=0, color='r', linestyle='--')
         plt.legend()
         plt.show()
 
@@ -33,7 +34,8 @@ class Security():
         x = np.linspace(start, end, num)
         y = [self.profit(x_i) for x_i in x]
         plt.plot(x, y, label="profit")
-        plt.axhline(y=0, color='r', linestyle='-')
+        plt.axhline(y=0, color='r', linestyle='--')
+        plt.legend()
         plt.show()
 
     def greek_letter(self, greek, dd=0, method="BSM"):
