@@ -61,3 +61,9 @@ class DealCombo:
             if y[i] * y[i+1] < 0:
                  result.append(binary_search(x[i], x[i+1], func=self.profit, max_iter=max_iter, tol=tol))
         return result
+
+    def market_profit(self):
+        result = 0
+        for deal in self.deals:
+            result += deal.market_profit()
+        return result
