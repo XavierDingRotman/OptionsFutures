@@ -1,12 +1,18 @@
-from src.deal import Deal, DealEquity, DealEuroCall, DealEuroPut
 import numpy as np
 from matplotlib import pyplot as plt
+
 from src.binary_search import binary_search
-from src.bsm_greek import delta, gamma
+
 
 class DealCombo:
     def __init__(self, deals):
         self.deals = deals
+
+    def cost(self):
+        result = 0
+        for deal in self.deals:
+            result += deal.cost()
+        return result
 
     def payoff(self, p):
         result = 0

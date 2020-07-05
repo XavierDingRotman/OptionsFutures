@@ -1,22 +1,27 @@
+from datetime import datetime as dt
+from math import inf
+
+from src.euro_option import EuroCall, EuroPut
 from src.security import Security
 from src.stock import Stock
-from src.euro_option import EuroCall, EuroPut
-from math import inf
-from datetime import datetime as dt
 from src.ticker import get_option_info_from_ticker
 from src.time import get_T
 
+
 class Deal:
     def __init__(self, position, price, commission=0, ticker=None, timestamp=dt.today()):
-        self.ticker=ticker
+        self.ticker = ticker
         self.position = position
         self.price = price
         self.contract_size = 1
-        self.commission=commission
-        self.timestamp=timestamp
+        self.commission = commission
+        self.timestamp = timestamp
         self.trading_volume = abs(self.position)
         self.is_short = self.position < 0
         self.security = Security(is_short=self.is_short, price=self.price)
+
+    def cost(self):
+        return self.price * self.position
 
     def payoff(self, p):
         return self.trading_volume * self.contract_size * self.security.payoff(p)

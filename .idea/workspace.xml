@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="" />
+    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/20200704_Risk_Analysis/XPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/20200704_Risk_Analysis/XPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deal.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deal_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deal_combo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/deal_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/deal_combo.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +39,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="XavierDingRotman &lt;62396188+xavierdingrotman@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="ProjectId" id="1eEgUDH4sXWE2VzPrffUJeEQpCz" />
   <component name="ProjectViewState">
@@ -177,6 +189,14 @@
       <option name="presentableId" value="Default" />
       <updated>1593892179579</updated>
     </task>
+    <task id="LOCAL-00001" summary="Reformat and rearrange code">
+      <created>1593907324945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593907324945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +211,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Reformat and rearrange code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformat and rearrange code" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593897720151">
       <screen x="66" y="0" width="1854" height="1080" />
@@ -200,22 +229,26 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="971" y="229" key="#xdebugger.evaluate/66.0.1854.1080@66.0.1854.1080" timestamp="1593903107943" />
-    <state width="916" height="447" key="GridCell.Tab.0.bottom" timestamp="1593906867795">
+    <state x="620" y="108" key="CommitChangelistDialog2" timestamp="1593907323946">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
-    <state width="916" height="447" key="GridCell.Tab.0.center" timestamp="1593906867795">
+    <state x="620" y="108" key="CommitChangelistDialog2/66.0.1854.1080@66.0.1854.1080" timestamp="1593907323946" />
+    <state width="916" height="447" key="GridCell.Tab.0.bottom" timestamp="1593907657354">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
-    <state width="916" height="447" key="GridCell.Tab.0.left" timestamp="1593906867795">
+    <state width="916" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657354" />
+    <state width="916" height="447" key="GridCell.Tab.0.center" timestamp="1593907657353">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
-    <state width="916" height="447" key="GridCell.Tab.0.right" timestamp="1593906867795">
+    <state width="916" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
+    <state width="916" height="447" key="GridCell.Tab.0.left" timestamp="1593907657353">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="916" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593906867795" />
+    <state width="916" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
+    <state width="916" height="447" key="GridCell.Tab.0.right" timestamp="1593907657353">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state width="916" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593907657353" />
     <state width="1833" height="364" key="GridCell.Tab.1.bottom" timestamp="1593904380190">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
@@ -232,10 +265,10 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state width="1833" height="364" key="GridCell.Tab.1.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593905913154">
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593907335017">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593905913154" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593907335017" />
     <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593905987692">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
