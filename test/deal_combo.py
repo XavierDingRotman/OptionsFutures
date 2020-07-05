@@ -3,7 +3,7 @@ from datetime import datetime as dt
 import pandas as pd
 
 from opfu.deal import get_deal_from_ticker, DealEquity
-from opfu.deal_combo import DealCombo
+from opfu.portfolio import Portfolio
 from opfu.sigma import est_sigma
 
 if __name__ == '__main__':
@@ -26,10 +26,10 @@ if __name__ == '__main__':
                                      r=r, sigma=sigma, comission=0.1839, timestamp=dt(2020, 6, 19),
                                      market_date=market_date, market_price=2.55)
 
-    deal_combo_1 = DealCombo([xpo_call_1, xpo_call_2, xpo_put_1, xpo_put_2])
+    deal_combo_1 = Portfolio([xpo_call_1, xpo_call_2, xpo_put_1, xpo_put_2])
     deal_combo_1.graph_payoff(start=40, end=120)
     deal_combo_1.graph_profit(start=40, end=120)
-    deal_combo_2 = DealCombo([xpo, xpo_call_1, xpo_call_2, xpo_put_1, xpo_put_2])
+    deal_combo_2 = Portfolio([xpo, xpo_call_1, xpo_call_2, xpo_put_1, xpo_put_2])
     deal_combo_2.graph_profit(start=40, end=120)
 
     print('Totol cost (combo 1） - {}'.format(deal_combo_1.cost()))

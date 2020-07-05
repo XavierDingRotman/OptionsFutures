@@ -1,8 +1,8 @@
 from opfu.euro_option import EuroCall, EuroPut
-from opfu.portfolio import Portfolio
+from opfu.synthetic import Synthetic
 
 
-class BullSpread(Portfolio):
+class BullSpread(Synthetic):
 
     def __init__(self, K1, K2, T, price_1=0, price_2=0, S0=None, r=0.01, sigma=0.1, use_call=True):
         if use_call:
@@ -11,10 +11,10 @@ class BullSpread(Portfolio):
         else:
             security_1 = EuroPut(K1, T, is_short=False, price=price_1, S0=S0, r=r, sigma=sigma)
             security_2 = EuroPut(K2, T, is_short=True, price=price_2, S0=S0, r=r, sigma=sigma)
-        Portfolio.__init__(self, [security_1, security_2])
+        Synthetic.__init__(self, [security_1, security_2])
 
 
-class BearSpread(Portfolio):
+class BearSpread(Synthetic):
 
     def __init__(self, K1, K2, T, price_1=0, price_2=0, S0=None, r=0.01, sigma=0.1, use_call=True):
         if use_call:
@@ -23,4 +23,4 @@ class BearSpread(Portfolio):
         else:
             security_1 = EuroPut(K1, T, is_short=True, price=price_1, S0=S0, r=r, sigma=sigma)
             security_2 = EuroPut(K2, T, is_short=False, price=price_2, S0=S0, r=r, sigma=sigma)
-        Portfolio.__init__(self, [security_1, security_2])
+        Synthetic.__init__(self, [security_1, security_2])
