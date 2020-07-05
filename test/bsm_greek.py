@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from src.bsm_greek import delta, gamma, theta, vega, rho
+from opfu.bsm_greek import delta, gamma, theta, vega, rho
 
 if __name__ == '__main__':
     S0 = 100

@@ -1,5 +1,6 @@
-from src.deal import get_deal_from_ticker
 from datetime import datetime as dt
+
+from opfu.deal import get_deal_from_ticker
 
 if __name__ == '__main__':
     ticker = "XPOG172008500.U"

@@ -1,4 +1,4 @@
-from src.binary_search import binary_search
+from opfu.binary_search import binary_search
 
 if __name__ == '__main__':
     def func(x):

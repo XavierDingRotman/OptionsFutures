@@ -1,11 +1,11 @@
 from datetime import datetime as dt
 from math import inf
 
-from src.euro_option import EuroCall, EuroPut
-from src.security import Security
-from src.stock import Stock
-from src.ticker import get_option_info_from_ticker
-from src.time import get_T
+from opfu.euro_option import EuroCall, EuroPut
+from opfu.security import Security
+from opfu.stock import Stock
+from opfu.ticker import get_option_info_from_ticker
+from opfu.time import get_T
 
 
 class Deal:

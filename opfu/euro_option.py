@@ -1,8 +1,8 @@
-from src.bsm import bsm_call_price, bsm_put_price
-from src.bsm_greek import delta, gamma, theta, vega, rho
-from src.error import InputError
-from src.option import Option
-from src.security import Security
+from opfu.bsm import bsm_call_price, bsm_put_price
+from opfu.bsm_greek import delta, gamma, theta, vega, rho
+from opfu.error import InputError
+from opfu.option import Option
+from opfu.security import Security
 
 
 class EuroOption(Option):

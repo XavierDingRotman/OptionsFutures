@@ -1,4 +1,4 @@
-from src.security import Security
+from opfu.security import Security
 
 
 class Stock(Security):

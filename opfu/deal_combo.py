@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-from src.binary_search import binary_search
+from opfu.binary_search import binary_search
 
 
 class DealCombo:

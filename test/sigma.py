@@ -1,5 +1,6 @@
 import pandas as pd
-from src.sigma import est_sigma
+
+from opfu.sigma import est_sigma
 
 if __name__ == '__main__':
     tau = "day"

@@ -1,7 +1,7 @@
 from datetime import datetime as dt
 
-from src.deal import get_deal_from_ticker, DealEquity
-from src.deal_combo import DealCombo
+from opfu.deal import get_deal_from_ticker, DealEquity
+from opfu.deal_combo import DealCombo
 
 if __name__ == '__main__':
     xpo = DealEquity(position=500, price=74, commission=0.0073, ticker="XPO", timestamp=dt(2020, 6, 26))

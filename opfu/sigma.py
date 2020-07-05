@@ -1,5 +1,6 @@
-import numpy as np
 from math import sqrt
+
+import numpy as np
 
 
 def est_sigma(hist, tau="day"):

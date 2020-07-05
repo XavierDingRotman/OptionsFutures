@@ -2,9 +2,9 @@ from datetime import datetime as dt
 
 import pandas as pd
 
-from src.deal import get_deal_from_ticker, DealEquity
-from src.deal_combo import DealCombo
-from src.sigma import est_sigma
+from opfu.deal import get_deal_from_ticker, DealEquity
+from opfu.deal_combo import DealCombo
+from opfu.sigma import est_sigma
 
 if __name__ == '__main__':
     r = 0.68 / 100

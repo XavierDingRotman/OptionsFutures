@@ -2,7 +2,7 @@ from math import sqrt, exp
 
 from scipy.stats import norm
 
-from src.bsm import N, bsm_price, d1, d2
+from opfu.bsm import N, bsm_price, d1, d2
 
 
 def N_d(x):

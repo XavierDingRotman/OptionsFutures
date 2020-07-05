@@ -1,8 +1,8 @@
 import math
 
-from src.euro_option import EuroCall, EuroPut
-from src.portfolio import Portfolio
-from src.stock import Stock
+from opfu.euro_option import EuroCall, EuroPut
+from opfu.portfolio import Portfolio
+from opfu.stock import Stock
 
 if __name__ == '__main__':
     stock_1 = Stock(10, 3)
