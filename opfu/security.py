@@ -4,11 +4,20 @@ import numpy as np
 from opfu.binary_search import binary_search
 
 
-class Security():
-    def __init__(self, is_short, price=0):
+class Security(object):
+
+    def __init__(self, is_short, price=0, name="Unnamed security", market_price=None):
         self.is_short = is_short
         self.price = price
         self.sign = -1 if is_short else 1
+        self.name = name
+        self.market_price = market_price
+
+    def cost(self):
+        return self.sign * self.price
+
+    def market_profit(self):
+        return 0 if self.market_price == None else self.market_price
 
     def payoff(self, P):
         # P is mature price
@@ -20,7 +29,7 @@ class Security():
         raise NotImplementedError
 
     def profit(self, P):
-        return self.payoff(P) - (self.price if not self.is_short else -self.price)
+        return self.payoff(P) - (self.price if not self.is_short else - self.price)
 
     def graph_payoff(self, start=0, end=100, num=100):
         x = np.linspace(start, end, num)
@@ -58,3 +67,15 @@ class Security():
             if y[i] * y[i + 1] < 0:
                 result.append(binary_search(x[i], x[i + 1], func=self.payoff, max_iter=max_iter, tol=tol))
         return result
+
+    def report(self, underlying_current_price=None, start=0, end=100, num=100, max_iter=1000, tol=1e-5):
+        self.graph_payoff(start=start, end=end, num=num)
+        self.graph_profit(start=start, end=end, num=num)
+        print('Report for : {}'.format(self.name))
+        print('Totol cost : {}'.format(self.cost()))
+        print('Breakeven : {}'.format(self.find_break_even(start=40, end=120, max_iter=max_iter, tol=tol)))
+        print('Current underlying price : {}'.format(underlying_current_price))
+        for greek in ['delta', 'gamma', 'theta', 'vega', 'rho']:
+            print('{} : {}'.format(greek, self.greek_letter(greek)))
+
+        print('Deal Profit : {}'.format(self.market_profit()))
