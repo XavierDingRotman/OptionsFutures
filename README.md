@@ -4,7 +4,7 @@ A quantitative financial library for options and futures pricing based on Numpy,
 ## Usage
 use "opfu" as the library name for interface.
 
-Current supported library
+Current implementation
 
 ### opfu.binary_search
 ### opfu.bsm
