@@ -17,14 +17,14 @@ dict_is_call = {"A": True, "B": True, "C": True,
                 "V": False, "W": False, "X": False}
 
 
-def get_option_info_from_ticker(ticker):
-    asset = ticker[:3]
-    exp_month_code = ticker[3]
+def get_option_info_from_ticker(ticker, equity_length=3):
+    asset = ticker[:equity_length]
+    exp_month_code = ticker[equity_length]
     month = dict_month[exp_month_code]
     is_call = dict_is_call[exp_month_code]
-    day = int(ticker[4:6])
-    year = int(ticker[6:8]) + 2000
-    K = int(ticker[8:-2])/100
+    day = int(ticker[equity_length + 1:equity_length + 3])
+    year = int(ticker[equity_length + 3:equity_length + 5]) + 2000
+    K = int(ticker[equity_length + 5:-2]) / 100
     country = ticker[-1]
     return asset, is_call, month, day, year, K, country
 

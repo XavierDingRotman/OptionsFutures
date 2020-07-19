@@ -87,8 +87,8 @@ class DealEuroPut(Deal):
 
 
 def get_deal_from_ticker(ticker, position, price, S0=None, r=0.01, sigma=0.1, comission=0, timestamp=dt.today(),
-                         market_date=dt.today(), market_price=None):
-    asset, is_call, month, day, year, K, country = get_option_info_from_ticker(ticker)
+                         market_date=dt.today(), market_price=None, equity_length=3):
+    asset, is_call, month, day, year, K, country = get_option_info_from_ticker(ticker, equity_length)
     time_mature = dt(year, month, day)
     T = get_T(timestamp, time_mature)
     ticker_underlying = asset

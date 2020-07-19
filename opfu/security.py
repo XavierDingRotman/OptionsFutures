@@ -68,14 +68,16 @@ class Security(object):
                 result.append(binary_search(x[i], x[i + 1], func=self.payoff, max_iter=max_iter, tol=tol))
         return result
 
-    def report(self, underlying_current_price=None, start=0, end=100, num=100, max_iter=1000, tol=1e-5):
+    def report(self, underlying_current_price=None, start=0, end=100, num=100, max_iter=1000, tol=1e-5,
+               report_greek=True, report_market_profit=True):
         self.graph_payoff(start=start, end=end, num=num)
         self.graph_profit(start=start, end=end, num=num)
         print('Report for : {}'.format(self.name))
         print('Totol cost : {}'.format(self.cost()))
-        print('Breakeven : {}'.format(self.find_break_even(start=40, end=120, max_iter=max_iter, tol=tol)))
+        print('Breakeven : {}'.format(self.find_break_even(start=start, end=end, max_iter=max_iter, tol=tol)))
         print('Current underlying price : {}'.format(underlying_current_price))
-        for greek in ['delta', 'gamma', 'theta', 'vega', 'rho']:
-            print('{} : {}'.format(greek, self.greek_letter(greek)))
-
-        print('Deal Profit : {}'.format(self.market_profit()))
+        if report_greek:
+            for greek in ['delta', 'gamma', 'theta', 'vega', 'rho']:
+                print('{} : {}'.format(greek, self.greek_letter(greek)))
+        if report_market_profit:
+            print('Deal Profit : {}'.format(self.market_profit()))
