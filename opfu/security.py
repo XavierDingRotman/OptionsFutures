@@ -11,7 +11,7 @@ class Security(object):
         self.price = price
         self.sign = -1 if is_short else 1
         self.name = name
-        self.market_price = market_price
+        self.market_price = self.price if market_price is None else market_price
 
     def cost(self):
         return self.sign * self.price

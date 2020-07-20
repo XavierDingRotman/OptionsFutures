@@ -21,8 +21,8 @@ class Deal(Security):
         self.is_short = self.position < 0
         self.security = Security(is_short=self.is_short, price=self.price)
         self.market_date = market_date
-        self.market_price = self.price if market_price is None else market_price
-        Security.__init__(self, self.is_short, self.price)
+        # self.market_price = self.price if (market_price is None) else market_price
+        Security.__init__(self, is_short=self.is_short, price=self.price, market_price=market_price)
 
     def cost(self):
         return self.price * self.position
