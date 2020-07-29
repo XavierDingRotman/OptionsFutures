@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='OptionsFutures',
-    version='1.1',
+    version='2.0',
     packages=find_packages(exclude=['test', 'data', 'analysis']),
     long_description=long_description,
     url='https://github.com/XavierDingRotman/OptionsFutures',
