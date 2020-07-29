@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opfu/swap.py" beforeDir="false" afterPath="$PROJECT_DIR$/opfu/swap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/swap.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/swap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +185,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/swap.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Xiaotong Ding\PycharmProjects\OptionsFutures\opfu\swap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,15 +220,15 @@
       <item itemvalue="Python.synthetic" />
       <item itemvalue="Python.interest_rate" />
       <item itemvalue="Python.bond" />
-      <item itemvalue="Python.swap" />
       <item itemvalue="Python.swap (1)" />
       <item itemvalue="Python.bond (1)" />
+      <item itemvalue="Python.fixedforfloatingswap" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.swap (1)" />
         <item itemvalue="Python.bond (1)" />
-        <item itemvalue="Python.swap" />
+        <item itemvalue="Python.fixedforfloatingswap" />
         <item itemvalue="Python.bond" />
         <item itemvalue="Python.interest_rate" />
       </list>
@@ -362,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596042312229</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated version to 2.0">
+      <created>1596042350522</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1596042350522</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -420,7 +429,8 @@
     <MESSAGE value="Divided the tests from swap implementation" />
     <MESSAGE value="Added print" />
     <MESSAGE value="Use Security for the hierarchy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use Security for the hierarchy" />
+    <MESSAGE value="Updated version to 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version to 2.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -430,10 +440,10 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="713" y="342" key="#com.intellij.fileTypes.FileTypeChooser/66.0.1854.1080@66.0.1854.1080" timestamp="1593909307142" />
-    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596034086199">
+    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596044845703">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596034086199" />
+    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596044845703" />
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/66.0.1854.1080@66.0.1854.1080" timestamp="1593897720151" />
     <state x="700" y="135" key="#interest_rate_curve" timestamp="1595999656424">
       <screen x="62" y="0" width="1858" height="1080" />
@@ -444,10 +454,10 @@
     </state>
     <state x="1054" y="448" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1596035957263" />
     <state x="971" y="229" key="#xdebugger.evaluate/66.0.1854.1080@66.0.1854.1080" timestamp="1593903107943" />
-    <state x="618" y="108" key="CommitChangelistDialog2" timestamp="1596042311507">
+    <state x="618" y="108" key="CommitChangelistDialog2" timestamp="1596042349890">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="618" y="108" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1596042311507" />
+    <state x="618" y="108" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1596042349890" />
     <state x="619" y="108" key="CommitChangelistDialog2/64.0.1856.1080@64.0.1856.1080" timestamp="1595207639444" />
     <state x="620" y="108" key="CommitChangelistDialog2/66.0.1854.1080@66.0.1854.1080" timestamp="1593909014319" />
     <state x="156" y="92" width="1672" height="896" key="DiffContextDialog" timestamp="1595176649347">
@@ -458,25 +468,25 @@
       <screen x="64" y="0" width="1856" height="1080" />
     </state>
     <state x="772" y="295" key="FileChooserDialogImpl/64.0.1856.1080@64.0.1856.1080" timestamp="1595173582038" />
-    <state width="1837" height="269" key="GridCell.Tab.0.bottom" timestamp="1596042173521">
+    <state width="1837" height="269" key="GridCell.Tab.0.bottom" timestamp="1596042368849">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="269" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596042173521" />
+    <state width="1837" height="269" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596042368849" />
     <state width="1833" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1837" height="269" key="GridCell.Tab.0.center" timestamp="1596042173521">
+    <state width="1837" height="269" key="GridCell.Tab.0.center" timestamp="1596042368849">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="269" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596042173521" />
+    <state width="1837" height="269" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596042368849" />
     <state width="1833" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1837" height="269" key="GridCell.Tab.0.left" timestamp="1596042173521">
+    <state width="1837" height="269" key="GridCell.Tab.0.left" timestamp="1596042368849">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="269" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596042173521" />
+    <state width="1837" height="269" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596042368849" />
     <state width="1833" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1837" height="269" key="GridCell.Tab.0.right" timestamp="1596042173521">
+    <state width="1837" height="269" key="GridCell.Tab.0.right" timestamp="1596042368849">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="269" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596042173521" />
+    <state width="1837" height="269" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596042368849" />
     <state width="1833" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
     <state width="1837" height="364" key="GridCell.Tab.1.bottom" timestamp="1596035976291">
       <screen x="62" y="0" width="1858" height="1080" />
@@ -502,19 +512,20 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="494" y="185" key="SettingsEditor/66.0.1854.1080@66.0.1854.1080" timestamp="1593910328350" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1596042319430">
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1596042362949">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1596042319430" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1596042362949" />
     <state x="584" y="273" key="Vcs.Push.Dialog.v2/64.0.1856.1080@64.0.1856.1080" timestamp="1595207647978" />
     <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593907335017" />
     <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593905987692">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593905987692" />
-    <state x="677" y="328" key="git4idea.merge.GitPullDialog" timestamp="1593905948584">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state x="674" y="328" key="git4idea.merge.GitPullDialog" timestamp="1596042356517">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="674" y="328" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596042356517" />
     <state x="677" y="328" key="git4idea.merge.GitPullDialog/66.0.1854.1080@66.0.1854.1080" timestamp="1593905948584" />
     <state x="653" y="235" width="674" height="678" key="search.everywhere.popup" timestamp="1596036446710">
       <screen x="62" y="0" width="1858" height="1080" />
