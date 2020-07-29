@@ -1,14 +1,31 @@
+
 class Bond(object):
     def __init__(self, payments: dict, discount_curve, is_short=False):
         self.payments = payments
         self.discount_curve = discount_curve
         self.is_short = is_short
 
+    def cashflow(self):
+        symbol = -1 if self.is_short else 1
+        result = {}
+        for key in self.payments.keys():
+            result[key] = symbol * self.payments[key]
+        return result
+
     def price(self):
         result = 0
         for payment_date in self.payments.keys():
             result += self.payments[payment_date] * self.discount_curve.get_value(payment_date).discount_factor() \
                       * (-1 if self.is_short else 1)
+        return result
+
+    def __repr__(self):
+        return str(self.cashflow())
+
+    def __str__(self):
+        result = ''
+        result += 'payment schedule : {} \n'.format(self.__repr__())
+        result += 'price : {} \n'.format(self.price())
         return result
 
 

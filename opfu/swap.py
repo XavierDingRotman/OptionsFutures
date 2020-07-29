@@ -1,3 +1,5 @@
+import pandas as pd
+
 from opfu.bond import FixedPaymentFixedIntervalBond, ForwardRateCurvePaymentFixedIntervalBond
 
 
@@ -32,4 +34,20 @@ class Swap(object):
     def price(self):
         return self.fix_leg.price() + self.floating_leg.price()
 
+    def cashflow(self):
+        dict_result = {}
+        dict_result['fixed_payment'] = self.fix_leg.cashflow()
+        dict_result['floating_payment'] = self.floating_leg.cashflow()
+        df = pd.DataFrame(dict_result)
+        df['total'] = df['fixed_payment'] + df['floating_payment']
+        return dict(df['total'])
 
+    def __str__(self):
+        dict_result = {}
+        dict_result['fixed_payment'] = self.fix_leg.cashflow()
+        dict_result['floating_payment'] = self.floating_leg.cashflow()
+        dict_result['cashflow'] = self.cashflow()
+        df = pd.DataFrame(dict_result)
+        result = 'cashflow : \n{}\n'.format(str(df))
+        result += 'price : {}\n'.format(self.price())
+        return result
