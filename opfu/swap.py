@@ -1,5 +1,4 @@
 from opfu.bond import FixedPaymentFixedIntervalBond, ForwardRateCurvePaymentFixedIntervalBond
-from opfu.interest_rate_curve import SpotRateCurve
 
 
 class FixedLeg(FixedPaymentFixedIntervalBond):
@@ -34,9 +33,3 @@ class Swap(object):
         return self.fix_leg.price() + self.floating_leg.price()
 
 
-if __name__ == '__main__':
-    libor_curve = SpotRateCurve(function=lambda x: x)
-    ois_curve = SpotRateCurve(function=lambda x: x)
-    swap = Swap(payment_rate=0.1 / 100, time_to_mature=1, forward_curve=libor_curve.get_forward_rate_curve(),
-                discount_curve=ois_curve)
-    print(swap.price())
