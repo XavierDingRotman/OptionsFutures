@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/setup.py" afterDir="false" />
+    <list default="true" id="eee6c14c-b05d-46e2-bd15-3badc6341a50" name="Default Changelist" comment="Added swap">
+      <change afterPath="$PROJECT_DIR$/opfu/bond.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opfu/interest_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opfu/interest_rate_curve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opfu/swap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opfu/deal.py" beforeDir="false" afterPath="$PROJECT_DIR$/opfu/deal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opfu/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/opfu/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/portfolio.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/portfolio.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +48,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="139" />
-    <option name="y" value="56" />
-    <option name="width" value="1599" />
-    <option name="height" value="987" />
-  </component>
   <component name="ProjectId" id="1eEgUDH4sXWE2VzPrffUJeEQpCz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -75,28 +69,7 @@
       <recent name="C:\Users\Xiaotong Ding\Documents\GitHub\OptionsFutures\analysis\20200704_Risk_Analysis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.portfolio_analysis">
-    <configuration name="b_splines (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="OptionsFutures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/b_splines.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.interest_rate">
     <configuration name="b_splines" type="PythonConfigurationType" factoryName="Python">
       <module name="OptionsFutures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,28 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deal" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="OptionsFutures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/deal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ir_curve (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bond" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OptionsFutures" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/ir_curve.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/bond.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ir_curve" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="interest_rate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OptionsFutures" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,11 +120,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/opfu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/ir_curve.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/interest_rate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="interest_rate_curve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptionsFutures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/opfu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/interest_rate_curve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,6 +167,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/portfolio_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="swap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptionsFutures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/opfu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opfu/swap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,19 +220,19 @@
     <list>
       <item itemvalue="Python.b_splines" />
       <item itemvalue="Python.synthetic" />
-      <item itemvalue="Python.deal" />
-      <item itemvalue="Python.b_splines (1)" />
-      <item itemvalue="Python.ir_curve" />
-      <item itemvalue="Python.ir_curve (1)" />
       <item itemvalue="Python.portfolio_analysis" />
+      <item itemvalue="Python.interest_rate" />
+      <item itemvalue="Python.interest_rate_curve" />
+      <item itemvalue="Python.bond" />
+      <item itemvalue="Python.swap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.interest_rate" />
+        <item itemvalue="Python.swap" />
+        <item itemvalue="Python.bond" />
+        <item itemvalue="Python.interest_rate_curve" />
         <item itemvalue="Python.portfolio_analysis" />
-        <item itemvalue="Python.ir_curve" />
-        <item itemvalue="Python.ir_curve (1)" />
-        <item itemvalue="Python.b_splines (1)" />
-        <item itemvalue="Python.deal" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595121670168</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed the market price issue in security level">
+      <created>1595207640471</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595207640471</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -390,7 +391,9 @@
     <MESSAGE value="Updated version to 1.0.3&#10;- Use universal drawing function under security&#10;- Added horizontal line crossing y = 0" />
     <MESSAGE value="Added name in security" />
     <MESSAGE value="Added b-splines for interest rate curve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added b-splines for interest rate curve" />
+    <MESSAGE value="Fixed the market price issue in security level" />
+    <MESSAGE value="Added swap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added swap" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -400,17 +403,25 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="713" y="342" key="#com.intellij.fileTypes.FileTypeChooser/66.0.1854.1080@66.0.1854.1080" timestamp="1593909307142" />
-    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593897720151">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596034086199">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="447" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596034086199" />
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/66.0.1854.1080@66.0.1854.1080" timestamp="1593897720151" />
-    <state x="971" y="229" key="#xdebugger.evaluate" timestamp="1593903107943">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state x="700" y="135" key="#interest_rate_curve" timestamp="1595999656424">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="700" y="135" key="#interest_rate_curve/62.0.1858.1080@62.0.1858.1080" timestamp="1595999656424" />
+    <state x="1054" y="448" key="#xdebugger.evaluate" timestamp="1596035957263">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1054" y="448" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1596035957263" />
     <state x="971" y="229" key="#xdebugger.evaluate/66.0.1854.1080@66.0.1854.1080" timestamp="1593903107943" />
-    <state x="620" y="108" key="CommitChangelistDialog2" timestamp="1593909014319">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state x="618" y="108" key="CommitChangelistDialog2" timestamp="1596036145144">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="618" y="108" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1596036145144" />
+    <state x="619" y="108" key="CommitChangelistDialog2/64.0.1856.1080@64.0.1856.1080" timestamp="1595207639444" />
     <state x="620" y="108" key="CommitChangelistDialog2/66.0.1854.1080@66.0.1854.1080" timestamp="1593909014319" />
     <state x="156" y="92" width="1672" height="896" key="DiffContextDialog" timestamp="1595176649347">
       <screen x="64" y="0" width="1856" height="1080" />
@@ -420,46 +431,54 @@
       <screen x="64" y="0" width="1856" height="1080" />
     </state>
     <state x="772" y="295" key="FileChooserDialogImpl/64.0.1856.1080@64.0.1856.1080" timestamp="1595173582038" />
-    <state width="1833" height="447" key="GridCell.Tab.0.bottom" timestamp="1593910861200">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="269" key="GridCell.Tab.0.bottom" timestamp="1596036145175">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="269" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596036145175" />
     <state width="1833" height="447" key="GridCell.Tab.0.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1833" height="447" key="GridCell.Tab.0.center" timestamp="1593910861200">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="269" key="GridCell.Tab.0.center" timestamp="1596036145175">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="269" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596036145175" />
     <state width="1833" height="447" key="GridCell.Tab.0.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1833" height="447" key="GridCell.Tab.0.left" timestamp="1593910861200">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="269" key="GridCell.Tab.0.left" timestamp="1596036145175">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="269" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596036145175" />
     <state width="1833" height="447" key="GridCell.Tab.0.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1833" height="447" key="GridCell.Tab.0.right" timestamp="1593910861200">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="269" key="GridCell.Tab.0.right" timestamp="1596036145175">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="269" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596036145175" />
     <state width="1833" height="447" key="GridCell.Tab.0.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593910861200" />
-    <state width="1833" height="364" key="GridCell.Tab.1.bottom" timestamp="1593904380190">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="364" key="GridCell.Tab.1.bottom" timestamp="1596035976291">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="364" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596035976291" />
     <state width="1833" height="364" key="GridCell.Tab.1.bottom/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
-    <state width="1833" height="364" key="GridCell.Tab.1.center" timestamp="1593904380190">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="364" key="GridCell.Tab.1.center" timestamp="1596035976291">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="364" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596035976291" />
     <state width="1833" height="364" key="GridCell.Tab.1.center/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
-    <state width="1833" height="364" key="GridCell.Tab.1.left" timestamp="1593904380190">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="364" key="GridCell.Tab.1.left" timestamp="1596035976291">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="364" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596035976291" />
     <state width="1833" height="364" key="GridCell.Tab.1.left/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
-    <state width="1833" height="364" key="GridCell.Tab.1.right" timestamp="1593904380190">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state width="1837" height="364" key="GridCell.Tab.1.right" timestamp="1596035976291">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state width="1837" height="364" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596035976291" />
     <state width="1833" height="364" key="GridCell.Tab.1.right/66.0.1854.1080@66.0.1854.1080" timestamp="1593904380190" />
     <state x="494" y="185" key="SettingsEditor" timestamp="1593910328350">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="494" y="185" key="SettingsEditor/66.0.1854.1080@66.0.1854.1080" timestamp="1593910328350" />
-    <state x="584" y="273" key="Vcs.Push.Dialog.v2" timestamp="1595207568708">
+    <state x="584" y="273" key="Vcs.Push.Dialog.v2" timestamp="1595207647978">
       <screen x="64" y="0" width="1856" height="1080" />
     </state>
-    <state x="584" y="273" key="Vcs.Push.Dialog.v2/64.0.1856.1080@64.0.1856.1080" timestamp="1595207568708" />
+    <state x="584" y="273" key="Vcs.Push.Dialog.v2/64.0.1856.1080@64.0.1856.1080" timestamp="1595207647978" />
     <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080@66.0.1854.1080" timestamp="1593907335017" />
     <state x="802" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593905987692">
       <screen x="66" y="0" width="1854" height="1080" />
@@ -469,9 +488,10 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="677" y="328" key="git4idea.merge.GitPullDialog/66.0.1854.1080@66.0.1854.1080" timestamp="1593905948584" />
-    <state x="656" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1593902849698">
-      <screen x="66" y="0" width="1854" height="1080" />
+    <state x="653" y="235" width="674" height="678" key="search.everywhere.popup" timestamp="1595993250330">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="653" y="235" width="674" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1595993250330" />
     <state x="656" y="235" width="672" height="678" key="search.everywhere.popup/66.0.1854.1080@66.0.1854.1080" timestamp="1593902849698" />
   </component>
   <component name="XDebuggerManager">
@@ -502,6 +522,16 @@
           <line>5</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/opfu/interest_rate.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/opfu/interest_rate_curve.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -509,95 +539,8 @@
         <watch expression="self.dict_b_t" language="Python" />
         <watch expression="self.b(k, d-1)(t)" language="Python" />
         <watch expression="(t - self.t_grids[k])/(t[k+d]-t[k])" language="Python" />
+        <watch expression="principle" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>d==1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>d==2</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>d==3</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>(t - self.t_grids[k])/(t[k+d]-t[k])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.b(k, d-1)(t)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.dict_b_t</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>trans_date</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>self.get_func()(1)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.get_func(1)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>t</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>[self.get_func()(tt) for tt in t]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(None == None).all()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(t_grids == None).all()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>t_grids == None</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.b(kk, d)(t)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.t_grids[k]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>
